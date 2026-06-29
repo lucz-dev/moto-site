@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MOTO — sito / landing page
 
-## Getting Started
+Landing page per **MOTO**, un gioco arcade free-roam di moto e auto che gira nel
+browser (Three.js + WebGL). Costruita con **Next.js 16** (App Router) e CSS
+artigianale — nessun framework di stile.
 
-First, run the development server:
+> Concept: _la pagina è una strada._ Il gioco è guida libera, quindi il sito
+> guida — una clip in-engine come hero e la segnaletica stradale del gioco
+> (linee gialle di mezzeria, strisce pedonali) come sistema strutturale tra le
+> sezioni.
+
+## Sviluppo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm run build      # build di produzione (statica)
+npm run start      # serve la build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Struttura
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `app/page.tsx` — composizione della pagina (server component).
+- `app/components/DriveClip.tsx` — player a frame della clip di guida (canvas, loop, rispetta `prefers-reduced-motion`).
+- `app/components/Reveal.tsx` — reveal allo scroll (IntersectionObserver, con fallback).
+- `app/lib/vehicles.ts` — dati reali dei veicoli (statistiche dal catalogo del gioco).
+- `app/globals.css` — token di colore/tipografia + tutti gli stili.
+- `public/media/` — screenshot e frame della clip, catturati direttamente dal gioco in free-roam.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Asset
 
-## Learn More
+Gli screenshot e i frame della clip sono **catturati dal gioco vero** (modalità
+free-roam: città, guida, showroom della villa), non mockup.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pensato per **Vercel**: importa la repo, framework _Next.js_, build di default.
+La variabile opzionale `NEXT_PUBLIC_SITE_URL` imposta il dominio per i meta
+Open Graph.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Il pulsante **Gioca** punta a un segnaposto (`PLAY_URL` in `app/page.tsx`):
+> aggiornalo con l'URL del build giocabile quando è online.
