@@ -88,7 +88,9 @@ svg {
 }
 
 .shell {
-  width: min(100% - (var(--gutter) * 2), var(--max));
+  width: calc(100% - (var(--gutter) * 2));
+  max-width: var(--max);
+  min-width: 0;
   margin-inline: auto;
 }
 
@@ -1317,6 +1319,7 @@ svg {
   .hero-media__video { object-position: 62% center; }
   .hero__content { padding-top: 112px; padding-bottom: 92px; }
   .hero__title { font-size: clamp(50px, 17vw, 78px); line-height: 0.86; }
+  html[lang="en"] .hero__title { font-size: clamp(46px, 14vw, 68px); }
   .hero__title strong { transform: none; }
   .hero__copy { margin-top: 25px; font-size: 18px; }
   .hero__actions { display: grid; grid-template-columns: 1fr; }
