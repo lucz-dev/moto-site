@@ -87,9 +87,6 @@ export default async function HomePage({
             </div>
             <p className="hero__note"><ShieldCheck aria-hidden="true" />{hero("note")}</p>
           </div>
-          <div className="hero__telemetry" aria-hidden="true">
-            <span>FREE ROAM</span><b>219</b><i>KM/H</i>
-          </div>
           <div className="road-edge" aria-hidden="true"><span /><span /><span /></div>
         </section>
 
