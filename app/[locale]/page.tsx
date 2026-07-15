@@ -233,7 +233,7 @@ export default async function HomePage({
         </section>
 
         <section className="final-cta" aria-labelledby="final-title">
-          <Image src="/media/hero-poster.webp" alt="" fill sizes="100vw" />
+          <Image src="/media/wheelie-hero-poster.webp" alt="" fill sizes="100vw" />
           <div className="final-cta__scrim" aria-hidden="true" />
           <Reveal className="final-cta__content shell">
             <p className="eyebrow eyebrow--light"><span aria-hidden="true" />{final("eyebrow")}</p>

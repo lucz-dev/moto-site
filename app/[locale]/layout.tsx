@@ -73,13 +73,13 @@ export async function generateMetadata({
       alternateLocale: locale === "it" ? ["en_US"] : ["it_IT"],
       title: t("title"),
       description: t("description"),
-      images: [{ url: "/media/hero-poster.webp", width: 1920, height: 1080, alt: t("ogAlt") }],
+      images: [{ url: "/media/wheelie-hero-poster.webp", width: 1920, height: 1080, alt: t("ogAlt") }],
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["/media/hero-poster.webp"],
+      images: ["/media/wheelie-hero-poster.webp"],
     },
   };
 }

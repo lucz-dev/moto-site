@@ -43,7 +43,7 @@ export default function HeroMedia({ posterAlt, videoLabel }: { posterAlt: string
     <div className="hero-media">
       <Image
         className="hero-media__poster"
-        src="/media/hero-poster.webp"
+        src="/media/wheelie-hero-poster.webp"
         alt={posterAlt}
         fill
         priority
@@ -58,11 +58,11 @@ export default function HeroMedia({ posterAlt, videoLabel }: { posterAlt: string
         loop
         playsInline
         preload="metadata"
-        poster={loadVideo && !reduceMotion ? "/media/hero-poster.webp" : undefined}
+        poster={loadVideo && !reduceMotion ? "/media/wheelie-hero-poster.webp" : undefined}
         aria-label={videoLabel}
       >
-        {loadVideo && !reduceMotion && <source src="/media/moto-montage.mp4" type="video/mp4" />}
-        {loadVideo && !reduceMotion && <source src="/media/moto-montage.webm" type="video/webm" />}
+        {loadVideo && !reduceMotion && <source src="/media/wheelie-ride.mp4" type="video/mp4" />}
+        {loadVideo && !reduceMotion && <source src="/media/wheelie-ride.webm" type="video/webm" />}
       </video>
       <div className="hero-media__scrim" aria-hidden="true" />
       <div className="hero-media__grain" aria-hidden="true" />
