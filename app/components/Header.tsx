@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, Languages, Menu, Play, X } from "lucide-react";
+import { Languages, Menu, Play, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -54,7 +54,6 @@ export default function Header({ locale }: { locale: Locale }) {
         <a className="button button--primary button--small header-play" href={GAME_URL} aria-label={t("play")}>
           <Play aria-hidden="true" fill="currentColor" />
           <span>{t("play")}</span>
-          <ArrowUpRight aria-hidden="true" className="button__tail" />
         </a>
         <button
           className="menu-toggle"

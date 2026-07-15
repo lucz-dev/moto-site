@@ -68,7 +68,7 @@ export default async function HomePage({
         <section className="hero" id="top" aria-labelledby="hero-title">
           <HeroMedia posterAlt={hero("posterAlt")} videoLabel={hero("videoLabel")} />
           <div className="hero__content shell">
-            <p className="eyebrow eyebrow--light"><span aria-hidden="true" />{hero("eyebrow")}</p>
+            <p className="eyebrow eyebrow--light">{hero("eyebrow")}</p>
             <h1 id="hero-title" className="hero__title">
               {hero("titleStart")}
               <strong>{hero("titleAccent")}</strong>
@@ -78,7 +78,6 @@ export default async function HomePage({
               <a className="button button--primary button--large" href={GAME_URL}>
                 <Play aria-hidden="true" fill="currentColor" />
                 {hero("play")}
-                <ArrowUpRight className="button__tail" aria-hidden="true" />
               </a>
               <a className="button button--ghost button--large" href="#world">
                 {hero("discover")}
