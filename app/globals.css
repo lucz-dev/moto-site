@@ -26,6 +26,7 @@
 
 html {
   background: var(--bg);
+  overflow-x: clip;
   scroll-behavior: smooth;
   scroll-padding-top: 84px;
   -webkit-text-size-adjust: 100%;
@@ -1268,7 +1269,7 @@ svg {
   .world-layout,
   .activities,
   .garage-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .world-layout { gap: 60px; }
@@ -1350,6 +1351,10 @@ svg {
   .activities { margin-top: 70px; padding-top: 50px; }
 
   .garage-visual__caption { right: 0; bottom: 12px; max-width: 190px; }
+  .garage-visual,
+  .garage-copy { min-width: 0; }
+  .garage-numbers { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .garage-numbers span { min-width: 0; }
   .garage-numbers b { font-size: 27px; }
 
   .gallery-grid { grid-template-columns: 1fr; }
