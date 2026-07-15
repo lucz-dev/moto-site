@@ -1,0 +1,135 @@
+{
+  "Metadata": {
+    "title": "MOTO — guida la città, domina la strada",
+    "description": "MOTO è un arcade free-roam con 8 moto, 21 auto, una città-isola, traffico, eventi, garage e fisica custom. Gioca nel browser su desktop e mobile.",
+    "ogAlt": "Una moto impenna nella città-isola di MOTO"
+  },
+  "Navigation": {
+    "aria": "Navigazione principale",
+    "features": "Feature",
+    "world": "Mondo",
+    "garage": "Garage",
+    "gallery": "Gallery",
+    "roadmap": "Roadmap",
+    "play": "Gioca",
+    "playAria": "Gioca a MOTO nel browser",
+    "homeAria": "MOTO — torna all'inizio",
+    "language": "Cambia lingua",
+    "menu": "Apri il menu",
+    "closeMenu": "Chiudi il menu"
+    ,"skip": "Vai al contenuto"
+  },
+  "Hero": {
+    "eyebrow": "Arcade free-roam · già giocabile",
+    "titleStart": "La città è",
+    "titleAccent": "la tua pista.",
+    "description": "Impenna tra i palazzi, taglia le curve sul mare, colleziona moto e auto. MOTO è un open world arcade costruito per il browser.",
+    "play": "Gioca ora",
+    "discover": "Scopri il mondo",
+    "note": "Desktop · Mobile · PWA offline",
+    "videoLabel": "Montaggio di gameplay: impennata, guida in città e showroom della Villa",
+    "posterAlt": "Moto sportiva in impennata su una strada cittadina"
+  },
+  "Stats": {
+    "aria": "MOTO in numeri",
+    "vehicles": "veicoli guidabili",
+    "showroom": "posti nella Villa",
+    "island": "città-isola aperta",
+    "routes": "strade da inventare"
+  },
+  "Features": {
+    "eyebrow": "Giocabile oggi",
+    "title": "Non una promessa. Un mondo già acceso.",
+    "intro": "Ogni sistema qui sotto è già presente nel gioco e funziona insieme agli altri, senza schermate che spezzano il ritmo.",
+    "physics": {"title": "Fisica arcade custom", "body": "Impennate, stoppie, derapate, burnout, salti e cadute: leggibile subito, profonda quando spingi."},
+    "vehicles": {"title": "8 moto + 21 auto", "body": "Dallo scooter alla superbike, dalla citycar alla Formula: masse, trazione e carattere distinti."},
+    "world": {"title": "Città-isola free-roam", "body": "Centro urbano, costa, villaggio, tangenziale, ponti e pista: nessun percorso obbligato."},
+    "activities": {"title": "Attività su strada", "body": "Traffico, gare, consegne, speed trap ed eventi emergono direttamente nel mondo."},
+    "economy": {"title": "Economia e upgrade", "body": "Guadagna crediti, compra dal concessionario e migliora motore, freni, gomme e assetto in officina."},
+    "villa": {"title": "Showroom da 20 posti", "body": "Tre case da sbloccare. La Villa trasforma la tua collezione in un garage visitabile."},
+    "walking": {"title": "Scendi e cammina", "body": "Lascia il veicolo, esplora a piedi e scegli il prossimo mezzo direttamente dal garage."},
+    "audio": {"title": "Motori con una voce", "body": "Audio reattivo a giri, carico e velocità per dare a ogni accelerazione il peso giusto."},
+    "platforms": {"title": "Desktop e mobile", "body": "Tastiera, gamepad e touch. Installabile come PWA e disponibile anche offline."},
+    "cloud": {"title": "Account e cloud save", "body": "Salva progressi, garage, proprietà e upgrade e ritrovali sui tuoi dispositivi."}
+  },
+  "World": {
+    "eyebrow": "Il mondo",
+    "title": "Segui la strada. O ignorala.",
+    "body": "Una città che vive mentre la attraversi: semafori e traffico, scorci sul mare, rampe, officina, concessionario e una pista pronta quando vuoi misurarti col cronometro.",
+    "areasAria": "Zone del mondo",
+    "corner": "ISOLA / 01",
+    "activityEyebrow": "GIRO LIBERO",
+    "labels": {"city": "Centro", "coast": "Strada costiera", "track": "Isola delle gare"},
+    "activityTitle": "Cosa fai stasera?",
+    "activityBody": "Prendi una consegna, cerca il record allo speed trap, entra in pista o gira senza meta. Il gioco non ti toglie mai le chiavi.",
+    "activities": ["Consegne", "Eventi stradali", "Speed trap", "Gare", "Free ride"]
+  },
+  "Garage": {
+    "eyebrow": "Garage e collezione",
+    "title": "Venti posti. Ventinove tentazioni.",
+    "body": "Compra, prova, vernicia e potenzia 8 moto e 21 auto. Nella Villa puoi camminare tra due file di mezzi, riempire tutti i 20 slot e scegliere cosa portare fuori.",
+    "bikes": "8 moto",
+    "cars": "21 auto",
+    "slots": "20 slot Villa",
+    "imageAlt": "Showroom della Villa pieno con moto e auto disposte su due file",
+    "caption": "Uno showroom reale, non una lista.",
+    "workshop": "Officina",
+    "dealer": "Concessionario",
+    "homes": "3 case"
+  },
+  "Gallery": {
+    "eyebrow": "In-game, senza filtri",
+    "title": "Dal garage all'asfalto.",
+    "open": "Apri immagine: {title}",
+    "close": "Chiudi immagine",
+    "previous": "Immagine precedente",
+    "next": "Immagine successiva",
+    "counter": "{current} di {total}",
+    "wheelie": {"title": "Impennata", "alt": "Una moto sportiva impenna sulla strada cittadina"},
+    "city": {"title": "Città e traffico", "alt": "Guida nel centro della città-isola con traffico"},
+    "race": {"title": "Race island", "alt": "Veicolo in gara sulla pista dell'isola"},
+    "workshop": {"title": "Officina", "alt": "Interfaccia dell'officina per potenziare il veicolo"},
+    "villa": {"title": "La Villa", "alt": "Showroom della Villa riempito con venti veicoli"}
+  },
+  "Roadmap": {
+    "eyebrow": "La strada davanti",
+    "title": "Roadmap senza tachimetri inventati.",
+    "intro": "Tre stati chiari: ciò che puoi già guidare, ciò che stiamo costruendo e le direzioni che vogliamo esplorare.",
+    "now": {"title": "Giocabile ora", "description": "Sistemi disponibili nella build pubblica."},
+    "development": {"title": "In sviluppo", "description": "Lavori attivi e prossimi obiettivi."},
+    "future": {"title": "Futuro", "description": "Direzioni pianificate, senza date fittizie."},
+    "items": {
+      "physics": "Fisica arcade, stunt e cadute",
+      "freeroam": "Città-isola, traffico e pista",
+      "activities": "Consegne, gare e speed trap",
+      "garage": "Economia, case, officina e 29 veicoli",
+      "platforms": "Desktop, mobile, PWA, account e cloud save",
+      "multiplayer": "Multiplayer competitivo",
+      "career": "Carriera, obiettivi e risultati",
+      "stunts": "Punteggio stunt e combo",
+      "ai": "IA rivali e traffico più evoluta",
+      "editor": "Rifinitura e pubblicazione editor",
+      "biomes": "Nuovi biomi e punti d'interesse",
+      "dayNight": "Ciclo giorno-notte",
+      "ghosts": "Ghost e classifiche ampliate",
+      "music": "Musica ed effetti audio avanzati"
+    }
+  },
+  "Final": {
+    "eyebrow": "Semaforo verde",
+    "title": "Il prossimo giro è tuo.",
+    "body": "Apri il browser, scegli il mezzo e parti. Nessun download obbligatorio.",
+    "play": "Entra nel gioco",
+    "secondary": "Guarda la roadmap",
+    "transition": "Hai installato in passato la PWA da moto.lucz.dev? Il gioco ora vive sul nuovo indirizzo e potrebbe richiedere una nuova installazione."
+  },
+  "Footer": {
+    "aria": "Navigazione a piè di pagina",
+    "tagline": "Arcade free-roam, fatto a mano per il browser.",
+    "play": "Gioca",
+    "account": "Account",
+    "privacy": "Privacy",
+    "roadmap": "Roadmap",
+    "copyright": "© {year} MOTO / lucz. Tutto il gameplay mostrato è catturato in-game."
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "Metadata": {
+    "title": "MOTO — own the city, rule the road",
+    "description": "MOTO is a free-roam arcade game with 8 bikes, 21 cars, an island city, traffic, events, garages and custom physics. Play in your browser on desktop and mobile.",
+    "ogAlt": "A motorcycle pulls a wheelie in MOTO's island city"
+  },
+  "Navigation": {
+    "aria": "Main navigation",
+    "features": "Features",
+    "world": "World",
+    "garage": "Garage",
+    "gallery": "Gallery",
+    "roadmap": "Roadmap",
+    "play": "Play",
+    "playAria": "Play MOTO in your browser",
+    "homeAria": "MOTO — back to top",
+    "language": "Change language",
+    "menu": "Open menu",
+    "closeMenu": "Close menu"
+    ,"skip": "Skip to content"
+  },
+  "Hero": {
+    "eyebrow": "Free-roam arcade · playable now",
+    "titleStart": "The city is",
+    "titleAccent": "your racetrack.",
+    "description": "Wheelie past the skyline, carve the coast, collect bikes and cars. MOTO is an open-world arcade game built for the browser.",
+    "play": "Play now",
+    "discover": "Discover the world",
+    "note": "Desktop · Mobile · Offline PWA",
+    "videoLabel": "Gameplay montage: wheelie, city driving and walking through the Villa showroom",
+    "posterAlt": "A sport bike pulling a wheelie on a city road"
+  },
+  "Stats": {
+    "aria": "MOTO in numbers",
+    "vehicles": "driveable vehicles",
+    "showroom": "Villa showroom slots",
+    "island": "open island city",
+    "routes": "routes to invent"
+  },
+  "Features": {
+    "eyebrow": "Playable today",
+    "title": "Not a promise. A world already running.",
+    "intro": "Every system below is already in the game, working together without menus breaking the flow.",
+    "physics": {"title": "Custom arcade physics", "body": "Wheelies, stoppies, drifts, burnouts, jumps and crashes: instantly readable, deep when you push it."},
+    "vehicles": {"title": "8 bikes + 21 cars", "body": "From scooter to superbike, city car to Formula: distinct mass, grip and personality."},
+    "world": {"title": "Free-roam island city", "body": "Downtown, coast, village, ring road, bridges and a race track with no mandatory route."},
+    "activities": {"title": "Street activities", "body": "Traffic, races, deliveries, speed traps and events surface directly in the world."},
+    "economy": {"title": "Economy and upgrades", "body": "Earn credits, buy at the dealership and tune engine, brakes, tires and setup at the workshop."},
+    "villa": {"title": "20-slot showroom", "body": "Unlock three homes. The Villa turns your collection into a garage you can walk through."},
+    "walking": {"title": "Get out and walk", "body": "Leave your vehicle, explore on foot and choose your next ride inside the garage."},
+    "audio": {"title": "Engines with a voice", "body": "Audio responds to revs, load and speed so every pull has the right weight."},
+    "platforms": {"title": "Desktop and mobile", "body": "Keyboard, gamepad and touch. Installable as a PWA and available offline."},
+    "cloud": {"title": "Accounts and cloud saves", "body": "Save progress, garages, properties and upgrades and pick up on another device."}
+  },
+  "World": {
+    "eyebrow": "The world",
+    "title": "Follow the road. Or don't.",
+    "body": "A city that keeps moving around you: traffic lights and NPC traffic, sea views, ramps, workshop, dealership and a track whenever you want to chase the clock.",
+    "areasAria": "World areas",
+    "corner": "ISLAND / 01",
+    "activityEyebrow": "FREE RIDE",
+    "labels": {"city": "Downtown", "coast": "Coast road", "track": "Race island"},
+    "activityTitle": "What are you doing tonight?",
+    "activityBody": "Take a delivery, chase a speed-trap record, hit the track or wander without a goal. The game never takes away your keys.",
+    "activities": ["Deliveries", "Street events", "Speed traps", "Races", "Free ride"]
+  },
+  "Garage": {
+    "eyebrow": "Garage and collection",
+    "title": "Twenty slots. Twenty-nine temptations.",
+    "body": "Buy, test, paint and upgrade 8 bikes and 21 cars. At the Villa you can walk between two rows, fill all 20 slots and choose what goes out next.",
+    "bikes": "8 bikes",
+    "cars": "21 cars",
+    "slots": "20 Villa slots",
+    "imageAlt": "The Villa showroom filled with bikes and cars in two rows",
+    "caption": "A real showroom, not a list.",
+    "workshop": "Workshop",
+    "dealer": "Dealership",
+    "homes": "3 homes"
+  },
+  "Gallery": {
+    "eyebrow": "In-game, no filters",
+    "title": "From garage to asphalt.",
+    "open": "Open image: {title}",
+    "close": "Close image",
+    "previous": "Previous image",
+    "next": "Next image",
+    "counter": "{current} of {total}",
+    "wheelie": {"title": "Wheelie", "alt": "A sport bike pulling a wheelie on a city road"},
+    "city": {"title": "City and traffic", "alt": "Driving through the island city downtown with traffic"},
+    "race": {"title": "Race island", "alt": "A vehicle racing on the island track"},
+    "workshop": {"title": "Workshop", "alt": "Workshop interface used to upgrade a vehicle"},
+    "villa": {"title": "The Villa", "alt": "The Villa showroom filled with twenty vehicles"}
+  },
+  "Roadmap": {
+    "eyebrow": "The road ahead",
+    "title": "A roadmap without made-up speedometers.",
+    "intro": "Three clear states: what you can drive now, what we are building and where we want to go next.",
+    "now": {"title": "Playable now", "description": "Systems available in the public build."},
+    "development": {"title": "In development", "description": "Active work and the next objectives."},
+    "future": {"title": "Future", "description": "Planned directions, without fake dates."},
+    "items": {
+      "physics": "Arcade physics, stunts and crashes",
+      "freeroam": "Island city, traffic and race track",
+      "activities": "Deliveries, races and speed traps",
+      "garage": "Economy, homes, workshop and 29 vehicles",
+      "platforms": "Desktop, mobile, PWA, accounts and cloud saves",
+      "multiplayer": "Competitive multiplayer",
+      "career": "Career, goals and achievements",
+      "stunts": "Stunt scoring and combos",
+      "ai": "Smarter rivals and traffic AI",
+      "editor": "Editor polish and publishing",
+      "biomes": "New biomes and points of interest",
+      "dayNight": "Day-night cycle",
+      "ghosts": "Expanded ghosts and leaderboards",
+      "music": "Advanced music and sound effects"
+    }
+  },
+  "Final": {
+    "eyebrow": "Green light",
+    "title": "The next run is yours.",
+    "body": "Open your browser, choose a ride and go. No mandatory download.",
+    "play": "Enter the game",
+    "secondary": "See the roadmap",
+    "transition": "Installed the PWA from moto.lucz.dev before? The game now lives at a new address and may need to be installed again."
+  },
+  "Footer": {
+    "aria": "Footer navigation",
+    "tagline": "Hand-built free-roam arcade for the browser.",
+    "play": "Play",
+    "account": "Account",
+    "privacy": "Privacy",
+    "roadmap": "Roadmap",
+    "copyright": "© {year} MOTO / lucz. All gameplay shown was captured in-game."
+  }
+}

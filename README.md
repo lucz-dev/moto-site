@@ -1,42 +1,59 @@
-# MOTO — sito / landing page
+# MOTO — sito pubblico
 
-Landing page per **MOTO**, un gioco arcade free-roam di moto e auto che gira nel
-browser (Three.js + WebGL). Costruita con **Next.js 16** (App Router) e CSS
-artigianale — nessun framework di stile.
+Landing ufficiale di [MOTO](https://moto.lucz.dev), il free-roam arcade di moto e auto. Il sito pubblico e il gioco sono due applicazioni separate:
 
-> Concept: _la pagina è una strada._ Il gioco è guida libera, quindi il sito
-> guida — una clip in-engine come hero e la segnaletica stradale del gioco
-> (linee gialle di mezzeria, strisce pedonali) come sistema strutturale tra le
-> sezioni.
+- sito: `https://moto.lucz.dev`
+- gioco: `https://moto-game-eta.vercel.app`
+
+Il concept visivo è “la pagina è una strada”: fondo asfalto, segnaletica, tagli diagonali e accento arancione-rosso `#ff5a1f`.
+
+## Stack
+
+- Next.js 16 App Router + TypeScript
+- CSS artigianale, senza framework UI
+- `next-intl` per italiano e inglese
+- `motion/react` con `LazyMotion`, `domAnimation` e reduced motion
+- `lucide-react` con import statici
+- `next/image` per screenshot e poster
 
 ## Sviluppo
 
 ```bash
 npm install
-npm run dev        # http://localhost:3000
-npm run build      # build di produzione (statica)
-npm run start      # serve la build
+cp .env.example .env.local
+npm run dev
+npm run lint
+npm run build
+npm run start
 ```
+
+Variabili pubbliche richieste:
+
+```dotenv
+NEXT_PUBLIC_SITE_URL=https://moto.lucz.dev
+NEXT_PUBLIC_GAME_URL=https://moto-game-eta.vercel.app
+```
+
+I valori di produzione sono anche i fallback sicuri del codice, così metadata e CTA non puntano mai a un deployment estraneo.
 
 ## Struttura
 
-- `app/page.tsx` — composizione della pagina (server component).
-- `app/components/DriveClip.tsx` — player a frame della clip di guida (canvas, loop, rispetta `prefers-reduced-motion`).
-- `app/components/Reveal.tsx` — reveal allo scroll (IntersectionObserver, con fallback).
-- `app/lib/vehicles.ts` — dati reali dei veicoli (statistiche dal catalogo del gioco).
-- `app/globals.css` — token di colore/tipografia + tutti gli stili.
-- `public/media/` — screenshot e frame della clip, catturati direttamente dal gioco in free-roam.
+- `app/[locale]/` — layout, metadata e landing localizzati.
+- `messages/it.json`, `messages/en.json` — tutto il testo visibile, alt text inclusi.
+- `i18n/` + `proxy.ts` — routing `/it` e `/en`; `/` rileva `Accept-Language`, fallback italiano, nessun cookie lingua.
+- `app/lib/content.ts` — tipi e dati strutturali separati dalla UI.
+- `app/components/` — header, gallery, video hero e animazioni client isolate.
+- `app/sitemap.ts`, `app/robots.ts` — SEO tecnica e alternate localizzati.
+- `public/media/` — catture reali del gioco, video ottimizzati e poster.
 
-## Asset
+## Media reali
 
-Gli screenshot e i frame della clip sono **catturati dal gioco vero** (modalità
-free-roam: città, guida, showroom della villa), non mockup.
+Il montage hero dura 12 secondi e mostra una impennata, una curva in free-roam e una camminata nello showroom della Villa. È servito in WebM e MP4, senza audio, con poster WebP e preload limitato.
+
+Le catture sono state realizzate a 1920×1080 in un profilo locale isolato tramite `window.GAME`. Il profilo aveva Villa acquistata, tutti i 29 mezzi sbloccati e 20 slot riempiti con 8 moto e 12 auto. Non sono stati creati account backend e non sono state usate credenziali.
 
 ## Deploy
 
-Pensato per **Vercel**: importa la repo, framework _Next.js_, build di default.
-La variabile opzionale `NEXT_PUBLIC_SITE_URL` imposta il dominio per i meta
-Open Graph.
+Il progetto è pensato per Vercel. Configurare entrambe le variabili pubbliche negli ambienti Preview e Production prima del deploy. La migrazione di `moto.lucz.dev` richiede che il dominio del gioco e gli URL pubblici del servizio account siano già impostati su `https://moto-game-eta.vercel.app`.
 
-> Il pulsante **Gioca** punta a un segnaposto (`PLAY_URL` in `app/page.tsx`):
-> aggiornalo con l'URL del build giocabile quando è online.
+Chi aveva installato la vecchia PWA da `moto.lucz.dev` potrebbe dover reinstallare il gioco dal nuovo origin; la landing mostra un avviso esplicito durante la transizione.
