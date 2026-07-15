@@ -48,7 +48,7 @@ I valori di produzione sono anche i fallback sicuri del codice, così metadata e
 
 ## Media reali
 
-Il montage hero dura 12 secondi e mostra una impennata, una curva in free-roam e una camminata nello showroom della Villa. È servito in WebM e MP4, senza audio, con poster WebP e preload limitato.
+Il video hero dura 7 secondi e mostra un'unica impennata continua in terza persona, con il pilota sempre visibile. È servito in WebM e MP4, senza audio, con poster WebP e preload limitato.
 
 Le catture sono state realizzate a 1920×1080 in un profilo locale isolato tramite `window.GAME`. Il profilo aveva Villa acquistata, tutti i 29 mezzi sbloccati e 20 slot riempiti con 8 moto e 12 auto. Non sono stati creati account backend e non sono state usate credenziali.
 

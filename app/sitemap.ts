@@ -13,6 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         en: `${SITE_URL}/en`,
       },
     },
-    images: [`${SITE_URL}/media/hero-poster.webp`],
+    images: [`${SITE_URL}/media/wheelie-hero-poster.webp`],
   }));
 }

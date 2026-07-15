@@ -68,7 +68,7 @@ export const roadmap: readonly RoadmapPhase[] = [
 ];
 
 export const gallery: readonly GalleryItem[] = [
-  { id: "wheelie", src: "/media/wheelie.webp", width: 1920, height: 1080, featured: true },
+  { id: "wheelie", src: "/media/wheelie-rider.webp", width: 1920, height: 1080, featured: true },
   { id: "city", src: "/media/city-traffic.webp", width: 1920, height: 1080 },
   { id: "race", src: "/media/race.webp", width: 1920, height: 1080 },
   { id: "workshop", src: "/media/workshop.webp", width: 1920, height: 1080 },
