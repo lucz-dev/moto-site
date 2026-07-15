@@ -61,8 +61,8 @@ export default function HeroMedia({ posterAlt, videoLabel }: { posterAlt: string
         poster={loadVideo && !reduceMotion ? "/media/hero-poster.webp" : undefined}
         aria-label={videoLabel}
       >
-        {loadVideo && !reduceMotion && <source src="/media/moto-montage.webm" type="video/webm" />}
         {loadVideo && !reduceMotion && <source src="/media/moto-montage.mp4" type="video/mp4" />}
+        {loadVideo && !reduceMotion && <source src="/media/moto-montage.webm" type="video/webm" />}
       </video>
       <div className="hero-media__scrim" aria-hidden="true" />
       <div className="hero-media__grain" aria-hidden="true" />
