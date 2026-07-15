@@ -456,11 +456,6 @@ svg {
   align-content: center;
   column-gap: 14px;
   padding: 22px clamp(16px, 2.5vw, 34px);
-  border-left: 1px solid rgba(25, 7, 0, 0.24);
-}
-
-.stat:last-child {
-  border-right: 1px solid rgba(25, 7, 0, 0.24);
 }
 
 .stat svg {
@@ -518,16 +513,6 @@ svg {
   background:
     linear-gradient(145deg, transparent 0 78%, rgba(255, 90, 31, 0.05) 78% 85%, transparent 85%),
     var(--bg);
-}
-
-.section--features::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: max(var(--gutter), calc((100vw - var(--max)) / 2));
-  width: 1px;
-  background: var(--line);
-  content: "";
 }
 
 .feature-grid {
@@ -1248,8 +1233,6 @@ svg {
   .menu-toggle { display: inline-grid; }
 
   .stats-strip__grid { grid-template-columns: repeat(2, 1fr); }
-  .stat:nth-child(3) { border-top: 1px solid rgba(25, 7, 0, 0.24); }
-  .stat:nth-child(4) { border-top: 1px solid rgba(25, 7, 0, 0.24); }
 
   .world-layout,
   .activities,
