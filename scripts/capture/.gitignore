@@ -1,0 +1,10 @@
+# Raw captures and intermediate data (regenerate with the scripts here)
+catalog.json
+dims.json
+renders/
+scenes/
+clips/
+action/
+bld/
+ui/
+site/

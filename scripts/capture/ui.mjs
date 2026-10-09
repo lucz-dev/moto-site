@@ -1,0 +1,27 @@
+import { open } from './lib.mjs';
+const { browser, page, errors } = await open({ width: 1920, height: 1080 });
+const lang = process.argv[2] || 'it';
+// language: saved settings → reload
+await page.evaluate((l) => { const k = Object.keys(localStorage).find(k => k.includes('settings')); const s = k ? JSON.parse(localStorage.getItem(k)) : {}; s.lang = l; localStorage.setItem(k || 'moto2.settings', JSON.stringify(s)); }, lang);
+await page.reload(); await page.evaluate(() => GAME.ready()); await page.evaluate(() => { GAME.setQuality('ultra', true); GAME.audio?.({ enabled: false }); });
+await page.addStyleTag({ content: '#version{display:none!important}' });
+await page.waitForTimeout(2500);
+await page.screenshot({ path: `ui/${lang}-menu.png` });
+const snap = async (name, fn, wait = 1800) => { try { await page.evaluate(fn); await page.waitForTimeout(wait); await page.screenshot({ path: `ui/${lang}-${name}.png` }); console.log('ok', name); } catch (e) { console.log('fail', name, e.message.split('\n')[0]); } };
+await page.evaluate(() => GAME.load({ map: 'island-empty', place: 'portoreale', vehicle: 'foot', seed: 7 }));
+await page.evaluate(() => GAME.teleport('portoreale-dealership'));
+await page.waitForTimeout(4000);
+await snap('dealership', () => GAME.openDealership(), 3500);
+await snap('dealership-hadar', () => { const b = [...document.querySelectorAll('button')].find(b => /corsa|race/i.test(b.textContent || '')); b?.click(); }, 2500);
+await page.evaluate(() => GAME.closeDealership());
+await snap('workshop', () => GAME.openWorkshop(), 3500);
+await page.evaluate(() => GAME.closeWorkshop?.());
+await snap('championships', () => GAME.championshipOpen('car'), 2500);
+await page.keyboard.press('Escape'); await page.waitForTimeout(800);
+await snap('estate', () => GAME.openEstate(), 3000);
+await page.keyboard.press('Escape'); await page.waitForTimeout(800);
+await snap('map', () => GAME.minimap({ expanded: true, paint: true, frames: 30 }), 3000);
+await page.evaluate(() => GAME.minimap({ expanded: false }));
+await snap('settings', () => GAME.settingsMenu('driving'), 2000);
+await page.keyboard.press('Escape'); await page.waitForTimeout(800);
+await browser.close(); console.log(errors.filter(e => !e.includes('502') && !e.includes('404')));

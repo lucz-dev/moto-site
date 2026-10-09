@@ -1,0 +1,14 @@
+[
+ {"name":"pr-street","place":"portoreale","eye":[-2099,13.8,560],"look":[-2102,15,640]},
+ {"name":"pr-aerial","eye":[-2160,55,480],"look":[-2090,10,620]},
+ {"name":"harbor-aerial","place":"portoreale-harbor","eye":[-2085,24.7,1510],"look":[-1890,5.7,1350]},
+ {"name":"harbor-ground","eye":[-1930,5.3,1267],"look":[-1994,6.2,1230]},
+ {"name":"valdoria-street","place":"metropolis","eye":[-520,14,1903],"look":[-350,60,1903]},
+ {"name":"valdoria-aerial","eye":[-760,140,1650],"look":[-450,60,1903]},
+ {"name":"masseria-aerial","place":"masseria-val-chiaro","eye":[60,110,-330],"look":[103,64,-419]},
+ {"name":"airport-aerial","place":"airport","eye":[1100,160,-1100],"look":[1186,110,-965]},
+ {"name":"santa-aerial","place":"santa-cesarea-parking","eye":[1700,110,1150],"look":[1850,40,1300]},
+ {"name":"badisco-aerial","place":"porto-badisco","eye":[3000,70,-3100],"look":[3060,15,-2980]},
+ {"name":"mugello-aerial","place":"mugello","eye":[2150,90,2400],"look":[2300,30,2560]},
+ {"name":"island-overview","at":[-1500,500],"wait":8000,"eye":[-2600,700,-1600],"look":[-600,0,600]}
+]
